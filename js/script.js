@@ -8,8 +8,16 @@ console.log(listPlaceholder);
 const list = ['pane', 'uova', 'latte', 'cereali', 'caffè'];
 console.log(list);
 
-// Stampo in pagina la lista
-for(let i = 0; i < list.length; i++)
+// Stampo in pagina la lista (ciclo for)
+/*for(let i = 0; i < list.length; i++)
 {
     listPlaceholder.innerHTML += `<li>${list[i]}</li>`;
+}*/
+
+// Stampo in pagina la lista (ciclo while)
+let i = 0;
+while(i < list.length)
+{
+    listPlaceholder.innerHTML += `<li>${list[i]}</li>`;
+    i++;
 }
